@@ -10,6 +10,7 @@ import { Testimonials } from './components/testimonials';
 import { FAQ } from './components/faq';
 import { CTA } from './components/cta';
 import { Separator } from '@/components/ui/separator';
+import { SocialProofToast } from './components/social-proof-toast';
 
 export default function SalesPage({ searchParams }: { searchParams?: { recommendation?: string } }) {
   const recommendation = searchParams?.recommendation || '';
@@ -17,6 +18,7 @@ export default function SalesPage({ searchParams }: { searchParams?: { recommend
   return (
     <div className="flex flex-col items-center bg-background">
       <Header />
+      <SocialProofToast />
       <main className="w-full max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
         <Hero />
         <SectionSeparator />
