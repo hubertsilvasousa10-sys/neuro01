@@ -1,5 +1,6 @@
+import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { ListChecks, Music, Activity } from 'lucide-react';
+import { Activity, ArrowRight, ListChecks, Music, ShieldCheck } from 'lucide-react';
 
 const bonuses = [
     { icon: ListChecks, title: "Checklist Diário de Calma", value: "R$ 49,90" },
@@ -29,6 +30,23 @@ export function Bonuses() {
             </CardContent>
           </Card>
         ))}
+      </div>
+      <div className="mt-12">
+        <p className="text-xl text-foreground/90">Leve o método completo + todos os bônus por um preço especial de lançamento.</p>
+        <Button size="lg" className="mt-6 text-lg h-16 px-10 w-full sm:w-auto animate-pulse">
+            Garantir Acesso Imediato
+            <ArrowRight className="ml-2 h-5 w-5" />
+        </Button>
+        <div className="flex items-center justify-center gap-4 text-xs text-muted-foreground mt-4">
+            <div className="flex items-center gap-1">
+                <ShieldCheck className="h-4 w-4 text-green-500" />
+                <span>Compra 100% Segura</span>
+            </div>
+            <div className="flex items-center gap-1">
+                <ShieldCheck className="h-4 w-4 text-green-500" />
+                <span>Garantia de 7 Dias</span>
+            </div>
+        </div>
       </div>
     </section>
   );
