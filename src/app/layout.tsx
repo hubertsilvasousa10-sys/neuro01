@@ -19,11 +19,6 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
-        <Script
-          id="vturb-player-script"
-          strategy="beforeInteractive"
-          src="https://scripts.converteai.net/9acdea39-985e-40dc-92fd-96bd657faa49/players/69024ccb8687c6f8d6f2a443/v4/player.js"
-        />
         <Script id="meta-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
