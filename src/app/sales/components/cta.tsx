@@ -9,10 +9,12 @@ export function CTA() {
             <p className="mt-4 text-lg text-muted-foreground">
             Dê ao seu cachorro o presente da calma e fortaleça o vínculo entre vocês. Acesso imediato e garantia de satisfação.
             </p>
-            <Button size="lg" className="mt-8 text-lg h-16 px-10 w-full sm:w-auto animate-pulse">
-                Quero meu cachorro calmo — começar agora
-                <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <a href="https://www.ggcheckout.com/checkout/v2/fHqGK66FnlMMhMb6APyn">
+                <Button size="lg" className="mt-8 text-lg h-16 px-10 w-full sm:w-auto animate-pulse">
+                    Quero meu cachorro calmo — começar agora
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+            </a>
             <div className="flex items-center justify-center gap-4 text-xs text-muted-foreground mt-4">
                 <div className="flex items-center gap-1">
                     <ShieldCheck className="h-4 w-4 text-green-500" />
