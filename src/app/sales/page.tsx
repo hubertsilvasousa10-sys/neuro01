@@ -12,7 +12,11 @@ import { CTA } from './components/cta';
 import { Separator } from '@/components/ui/separator';
 import { SocialProofToast } from './components/social-proof-toast';
 
-export default function SalesPage({ searchParams }: { searchParams?: { recommendation?: string } }) {
+interface PageProps {
+  searchParams?: { recommendation?: string };
+}
+
+export default function SalesPage({ searchParams }: PageProps) {
   const recommendation = searchParams?.recommendation || '';
 
   return (
