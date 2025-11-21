@@ -19,6 +19,14 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+        <Script id="vsl-player-script" strategy="afterInteractive">
+          {`
+            var s=document.createElement("script");
+            s.src="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/sdk.js";
+            s.async=true;
+            document.head.appendChild(s);
+          `}
+        </Script>
         <Script id="meta-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
